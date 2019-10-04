@@ -1,7 +1,15 @@
 #!/bin/bash
 
-# install latest version of docker the lazy way
-curl -sSL https://get.docker.com | sh
+# # install latest version of docker the lazy way
+# curl -sSL https://get.docker.com | sh
+apt update
+apt upgrade -y
+apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+apt update
+apt-cache policy docker-ce
+apt install docker-ce
 
 # make it so you don't need to sudo to run docker commands
 usermod -aG docker ubuntu
