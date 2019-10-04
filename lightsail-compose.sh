@@ -13,7 +13,7 @@ chmod +x /usr/local/bin/docker-compose
 # copy the dockerfile into /srv/docker
 # if you change this, change the systemd service file to match
 # WorkingDirectory=[whatever you have below]
-mkdir /srv/docker
+mkdir -p /srv/docker
 curl -o /srv/docker/docker-compose.yml https://raw.githubusercontent.com/hashdog/lightsail-docker-compose/master/docker-compose.yml
 
 # copy in systemd unit file and register it so our compose file runs
