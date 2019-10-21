@@ -31,11 +31,12 @@ Currently Lightsail does not feature a Docker blueprint, but that's not really a
 
    Lightsail will launch a new instances, copy in our shell script, and execute it on first boot.
 
-   The shell script installs `docker` and `docker-compose`. It then copies over the Docker compose file. Next it copies in the systemd unit file, and registers it. This is the most reliable way to ensure the application runs automatically after a system restart. Finally, it starts the application via Docker Compose.
+   The shell script installs `docker` and `docker-compose`.
+<!-- It then copies over the Docker compose file. Next it copies in the systemd unit file, and registers it. This is the most reliable way to ensure the application runs automatically after a system restart. Finally, it starts the application via Docker Compose. -->
 
 1. Once the instance is up and running you can navigate to its IP address to see the running site.
 
-1. To ensure everything is working as expected click `Add task` in the top menu. Fill in the details and click `Add Task`.
+<!-- 1. To ensure everything is working as expected click `Add task` in the top menu. Fill in the details and click `Add Task`.
 
    You should now have that task listed.
 
@@ -45,7 +46,7 @@ Currently Lightsail does not feature a Docker blueprint, but that's not really a
 
    **Note**: The instance will say it's running very quickly, however it will takea  minute or two before everything is booted up and running.
 
-1. Reload the application website in your browser and ensure your task is still listed to verify that the Docker volumes are persisting your data.
+1. Reload the application website in your browser and ensure your task is still listed to verify that the Docker volumes are persisting your data. -->
 
 #### Cleanup
 1. To delete your Lightsail instance navigate to the Lightsail console, click the 3 dot menu in the upper right of the instance card, and click `Delete`.
